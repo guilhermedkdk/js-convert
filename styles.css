@@ -22,76 +22,73 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   width: 100%;
   min-height: 100vh;
+  padding: 1.25rem;
+  gap: 3.12rem;
 
   background-image: url("./img/bg.png");
   background-size: cover;
   background-position: center;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
-  gap: 3.12rem;
-
   color: #f1f2f6;
-
-  padding: 1.25rem;
 }
 
 main {
+  overflow-y: hidden;
   width: 100%;
   max-width: 480px;
-  border-radius: 1.5rem;
 
   border: 1px solid #2f3279;
-  overflow-y: hidden;
+  border-radius: 1.5rem;
 }
 
 form {
-  background-color: #141534;
-
   display: flex;
   flex-direction: column;
 
   padding: 3.5rem 4rem;
+  background-color: #141534;
 }
 
 label {
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+
+  text-transform: uppercase;
   font-size: 0.75rem;
   color: #b2b8de;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
-  margin-top: 1.25rem;
 }
 
 input,
 select {
-  outline: 0;
-
-  color: #f1f2f6;
+  padding: 1.25rem 1rem;
   border: 1px solid #1f2151;
   border-radius: 0.5rem;
+  outline: 0;
 
   background-color: #0e0f25;
-  padding: 1.25rem 1rem;
 
   font-family: "Inter", sans-serif;
   font-size: 1rem;
+  color: #f1f2f6;
 }
 
 select {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
+  cursor: pointer;
 
   background: url("./img/chevron-down.svg") no-repeat;
   background-position: calc(100% - 0.75rem) center !important;
   background-color: #0e0f25;
 
-  cursor: pointer;
   font-size: 1rem;
 }
 
@@ -107,23 +104,22 @@ select:focus {
 }
 
 button {
+  cursor: pointer;
   height: 3.25rem;
 
-  background-color: #2f34ab;
+  margin-top: 3rem;
 
   border: none;
   border-radius: 0.5rem;
-
-  color: #f1f2f6;
+  outline: 0;
+  background-color: #2f34ab;
 
   font-family: "Inter", sans-serif;
   font-size: 1rem;
   font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.2s;
+  color: #f1f2f6;
 
-  margin-top: 3rem;
-  outline: 0;
+  transition: background-color 0.2s;
 }
 
 button:hover {
@@ -135,14 +131,14 @@ button:focus {
 }
 
 footer {
-  background-color: #1f2151;
-  padding: 2.5rem;
-  max-height: 196px;
-
-  text-align: center;
-  display: none;
-
   overflow-y: scroll;
+  display: none;
+  text-align: center;
+
+  max-height: 196px;
+  padding: 2.5rem;
+
+  background-color: #1f2151;
 }
 
 .show-result {
@@ -150,17 +146,18 @@ footer {
 }
 
 footer span {
-  color: #7d8dec;
-  font-size: 1rem;
-  font-family: "IBM Plex Mono", monospace;
   margin-bottom: 0.5rem;
+
   line-height: 1.25rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1rem;
+  color: #7d8dec;
 }
 
 footer h1 {
-  color: #f1f2f6;
-  font-weight: 700;
-  font-size: 2rem;
-  line-height: 3rem;
   word-break: break-all;
+  line-height: 3rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f1f2f6;
 }
