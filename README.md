@@ -24,7 +24,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O Convert foi um mini projeto do curso Fullstack da Rocketseat no módulo "JavaScript", onde utilizei variáveis, operadores, funções, DOM e eventos para desenvolver uma aplicação de conversão de moedas.
+O "Convert" foi um mini projeto do curso Fullstack da Rocketseat no módulo "JavaScript", onde utilizei variáveis, operadores, funções, DOM e eventos para desenvolver uma aplicação de conversão de moedas.
 
 ## 📚 Aprendizados
 
